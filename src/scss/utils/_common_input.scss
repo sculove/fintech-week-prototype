@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+// 공통 Inputs Mixins
+// http://uit.navercorp.com/nPay/develop_team/m.layout/issue/3-inputfocus/scss/common/_mixins.scss
+@mixin Border($width, $style, $color) {
+    border: {
+        width: $width;
+        style: $style;
+        color: $color;
+    }
+}
+@mixin Border-Bottom($width, $style, $color) {
+    border-bottom: {
+        width: $width;
+        style: $style;
+        color: $color;
+    }
+}
+@mixin RadiusTotal($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin Padding($p-top, $p-right, $p-bottom, $p-left){
+    padding: $p-top $p-right $p-bottom $p-left;
+}
+@mixin InputArae($bg-color) {
+    position: relative;
+    display: block;
+    background-color: $bg-color;
+}
+@mixin ValueStyle($font-color, $font-size, $line-height){
+    display: block;
+    width: 100%;
+    color: $font-color;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: -0.5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@mixin FontStyle($size, $line-height){
+    font-size: $size;
+    line-height: $line-height;
+}
+@mixin ButtonDelete($right, $top, $p-top, $p-right, $p-bottom, $p-left){
+    display: none;
+    position: absolute;
+    right: $right;
+    top: $top;
+    padding: $p-top $p-right $p-bottom $p-left;
+    @extend %button_reset;
+    svg{
+        display: block;
+        vertical-align: top;
+    }
+}

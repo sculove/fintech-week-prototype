@@ -1,0 +1,26 @@
+@import '../scss/utils';
+
+.article {
+    @include flex-container;
+
+    margin: 0 20px;
+    .item {
+        @include flex(1);
+
+        text-align: center;
+    }
+    .link {
+        display: block;
+        padding: 10px 0 9px;
+        border-bottom: 1px solid #efeff0;
+        font-size: 16px;
+        line-height: 22px;
+        color: #929294;
+        &.is-selected {
+            padding-bottom: 8px;
+            border-bottom: 2px solid #1e1e23;
+            font-weight: $font-weight-bold;
+            color: #1e1e23;
+        }
+    }
+}

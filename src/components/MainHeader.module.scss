@@ -1,0 +1,21 @@
+@import '../scss//utils.scss';
+
+.article {
+    padding: 16px 20px 15px;
+    .icon-pay {
+        display: inline-block;
+        margin: 2px 5px 0 0;
+        line-height: 1px;
+        vertical-align: top;
+        svg {
+            vertical-align: top;
+        }
+    }
+    .title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .link {
+        color: #1e1e23;
+    }
+}

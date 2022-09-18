@@ -1,0 +1,84 @@
+// flex prefix mixin: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mixins
+// ios 10.0 android 5.0 ie 10+
+// pay-main ie flex 이슈 prefix 를 나중에 선언 (페이마크업 민구님 노트 확인)
+@mixin flex-container {
+    display: flex;
+    display: -ms-flexbox;
+}
+
+@mixin flex-direction($value: row) {
+    flex-direction: $value;
+    -ms-flex-direction: $value;
+}
+
+// Merge 충돌 시 하나의 mixin으로 병합
+@mixin flex-wrap($value: nowrap) {
+    flex-wrap: $value;
+    -webkit-flex-wrap: $value;
+    @if $value == nowrap {
+        -ms-flex-wrap: none;
+    } @else {
+        -ms-flex-wrap: $value;
+    }
+}
+
+// ie 사용시 flex-basis 값에 단위(%,px) 붙여줘야 됨
+@mixin flex($args: ()) {
+    $flexitems: $args;
+    
+    @if $args == initial {
+      $flexitems: 0 1 auto;
+    } @else if $args == auto {
+        $flexitems: 1 1 auto;
+    } @else if $args == none {
+        $flexitems: 0 0 auto;
+    } @else if length($args) == 1 {
+        $flexitems: $args 1 0%;
+    } 
+    flex: $flexitems;
+    -ms-flex: $flexitems;
+}
+
+@mixin flex-wrap($value: nowrap) {
+    flex-wrap: $value;
+
+    @if $value == nowrap {
+        -ms-flex-wrap: none;
+    } @else {
+        -ms-flex-wrap: $value;
+    }
+}
+
+@mixin justify-content($value: flex-start) {
+    justify-content: $value;
+
+    @if $value == flex-start {
+      -ms-flex-pack: start;
+    } @else if $value == flex-end {
+      -ms-flex-pack: end;
+    } @else if $value == space-between {
+      -ms-flex-pack: justify;
+    } @else if $value == space-around {
+      -ms-flex-pack: distribute;
+    } @else {
+      -ms-flex-pack: $value;
+    }
+  }
+
+  @mixin align-items($value: stretch) {
+    align-items: $value;
+    
+    @if $value == flex-start {
+      -ms-flex-align: start;
+    } @else if $value == flex-end {
+      -ms-flex-align: end;
+    } @else {
+      -ms-flex-align: $value;
+    }
+  }
+
+@mixin order($value) {
+  order: $value;
+  -ms-flex-order: $value;
+  -webkit-order: $value;
+}

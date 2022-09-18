@@ -1,0 +1,37 @@
+@import '../scss/utils';
+
+.article {
+    max-width: 568px;
+    margin: 0 auto;
+    background-color: #fff;
+    .area-info {
+        padding: 14px 14px 40px;
+        background-color: #f8f9fa;
+        &.is-fixed {
+            padding-bottom: 101px;
+        }
+    }
+    .area-link {
+        margin: 20px 0 0 13px;
+    }
+    .link {
+        display: inline-block;
+        line-height: 17px;
+        color: #767678;
+        vertical-align: top;
+        &:not(:last-child) {
+            position: relative;
+            padding-right: 11px;
+            margin-right: 10px;
+            &:after {
+                content: '';
+                position: absolute;
+                height: 12px;
+                width: 1px;
+                top: 2px;
+                right: 0;
+                background-color: #d8d8d8;
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@mixin absoluteV {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+@mixin absoluteXV {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+@mixin absoluteX($top){
+	position: absolute;
+	left: 50%;
+	top: $top;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+@mixin ellipsismulti($line){
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $line;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+@mixin ellipsissingle{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@mixin squareBracketsRight($width, $height, $b-color, $direction: right){
+	$angle: -45deg; // 우측방향 (direction == right)
+    @if $direction == 'left' { // 왼쪽 방향 화살표  
+        $angle: 135deg;
+    } @else if $direction == 'top' { // 위쪽 방향 화살표
+        $angle: -135deg;
+    } @else if $direction == 'bottom' {
+        $angle: 45deg;
+	}
+	
+	display: block;
+	height: $width;
+	width: $height;
+	border: 1px solid $b-color;
+	border-left-width: 0;
+	border-top-width: 0;
+	transform: rotate($angle);
+	-webkit-transform: rotate($angle);
+	-moz-transform: rotate($angle);
+	-o-transform: rotate($angle);
+	-ms-transform: rotate($angle);
+}
+
+@mixin makeTriangle($position, $width, $height, $b-color) {
+	@if $position == 'top' or $position == 'bottom' {
+		$width: floor($width/2); /// 소수점일 경우 이슈
+	} @else {
+		$height: floor($height/2);
+	}
+
+	border: solid transparent;
+	border-width: $height $width;
+	border-#{$position}-color: $b-color;
+}

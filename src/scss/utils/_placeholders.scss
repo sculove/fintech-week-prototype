@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+// extend
+%button_reset {
+	border: 0 none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+}
+
+%box-sizing-border {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+%hidden {
+	/// visibility: hidden (voiceover 안 읽히는 이슈로 사용 x)
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+%ui-green-color-button {
+    background-color: $ui-green-color;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+%hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

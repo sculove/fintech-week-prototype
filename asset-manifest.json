@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pages/finance-fe/fintech-week-prototype/static/css/main.388bb54e.css",
+    "main.js": "/pages/finance-fe/fintech-week-prototype/static/js/main.608b948f.js",
+    "static/js/787.62be714c.chunk.js": "/pages/finance-fe/fintech-week-prototype/static/js/787.62be714c.chunk.js",
+    "service-worker.js": "/pages/finance-fe/fintech-week-prototype/service-worker.js",
+    "index.html": "/pages/finance-fe/fintech-week-prototype/index.html",
+    "main.388bb54e.css.map": "/pages/finance-fe/fintech-week-prototype/static/css/main.388bb54e.css.map",
+    "main.608b948f.js.map": "/pages/finance-fe/fintech-week-prototype/static/js/main.608b948f.js.map",
+    "787.62be714c.chunk.js.map": "/pages/finance-fe/fintech-week-prototype/static/js/787.62be714c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.388bb54e.css",
+    "static/js/main.608b948f.js"
+  ]
+}

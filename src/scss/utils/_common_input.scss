@@ -56,3 +56,84 @@
         vertical-align: top;
     }
 }
+@mixin commonInputStyle(
+    $padding: 12px 0 12px 15px,
+    $font-size: 16px,
+    $font-weight: $font-weight-medium,
+    $line-height: 22px,
+    $color: #1e1e23,
+    $placeholder-color: #929294,
+    $masking-letter-spacing: number
+) {
+    @include flex(1);
+    .input-value {
+        @extend %button_reset;
+
+        overflow: hidden;
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        padding: $padding;
+        box-sizing: border-box;
+        font-size: $font-size;
+        font-weight: $font-weight;
+        line-height: $line-height;
+        text-overflow: ellipsis;
+        color: $color;
+        caret-color: #007cd9;
+        &::placeholder {
+            font-weight: $font-weight-normal;
+            color: $placeholder-color;
+        }
+        &::-webkit-inner-spin-button {
+            display: none;
+        }
+        &::-ms-clear {
+            display: none;
+        }
+    }
+    &.type-masking {
+        position: relative;
+        .input-value {
+            letter-spacing: 5px;
+            color: transparent;
+            ::selection {
+                background: transparent;
+                color: transparent;
+            }
+        }
+    }
+}
+@mixin commonInputBoxStyle($flex: false, $radius: 3px, $border-width: 2px) {
+    @if $flex == true {
+        @include flex(1);
+        @include flex-container;
+    }
+
+    position: relative;
+    &.is-focus {
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 1px;
+            bottom: 0;
+            left: 0;
+            border-radius: $radius;
+            box-shadow: 0 0 0 $border-width #444;
+        }
+    }
+}
+@mixin commonInputDashStyle {
+    min-width: 9px;
+    line-height: 46px;
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 9px;
+        height: 2px;
+        margin-top: 23px;
+        background-color: #999;
+        vertical-align: top;
+    }
+}

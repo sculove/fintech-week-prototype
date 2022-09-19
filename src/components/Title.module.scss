@@ -1,0 +1,11 @@
+@import '../scss/utils.scss';
+
+.article {
+    position: relative;
+    z-index: 30;
+    font-size: 22px;
+    line-height: 28px;
+    em {
+        color: $ui-green-color;
+    }
+}

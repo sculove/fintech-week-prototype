@@ -1,0 +1,82 @@
+@import '../scss/utils.scss';
+
+.article {
+    padding: 23px 20px 20px;
+    border: solid 1px #dcdee0;
+    border-radius: 9px;
+    & + & {
+        margin-top: 10px;
+    }
+    &:last-child {
+        margin-bottom: 20px;
+    }
+}
+.description {
+    margin-top: 20px;
+    font-weight: $font-weight-medium;
+    line-height: 20px;
+    color: #666;
+    &.error {
+        font-size: 20px;
+        line-height: 24px;
+        color: #888;
+    }
+}
+.point-color {
+    .type-woori & {
+        color: $sme-woori-color;
+    }
+    .type-mirae & {
+        color: $sme-mirae-color;
+    }
+    .type-raise & {
+        color: $ui-green-color;
+    }
+}
+.area-button {
+    margin-top: 20px;
+    .button + .button {
+        margin-top: 5px;
+    }
+}
+.notice {
+    margin-top: 11px;
+    font-size: 13px;
+    font-weight: $font-weight-semibold;
+    line-height: 16px;
+    text-align: center;
+    .type-woori & {
+        color: $sme-woori-color;
+    }
+    .type-mirae & {
+        color: $sme-mirae-color;
+    }
+}
+
+// raiseLimit Type
+.type-raise {
+    margin-top: 16px;
+    border-color: $ui-green-color;
+    .title {
+        display: block;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #e8e8e8;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .button-add {
+        @extend %button_reset;
+
+        width: 100%;
+        padding: 12px 0;
+        border: 1px solid #dcdee0;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: #222;
+        svg {
+            margin-right: 6px;
+        }
+    }
+}

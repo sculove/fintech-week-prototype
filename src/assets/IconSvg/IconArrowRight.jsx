@@ -1,5 +1,3 @@
-import React from 'react'
-
 const IconArrowRight = ({
     fill = '#000',
     width = '100%',

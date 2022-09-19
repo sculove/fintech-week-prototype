@@ -1,0 +1,29 @@
+@import '../../scss/utils.scss';
+
+%side-common-style {
+    position: absolute;
+    top: 0;
+    height: $header-heignt;
+}
+.article {
+    position: relative;
+    min-height: $header-heignt;
+    padding: 16px 25% 14px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.title {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
+}
+.side-right {
+    @extend %side-common-style;
+ 
+    right: 0;
+}
+.side-left {
+    @extend %side-common-style;
+ 
+    left: 0;
+}

@@ -1,0 +1,39 @@
+@import '../scss/utils.scss';
+
+.article {
+    position: relative;
+    display: block;
+    padding: 27px 19px 27px 58px;
+    border-radius: 9px;
+    color: #fff;
+    cursor: pointer;
+    svg {
+        @include absoluteV();
+
+        left: 17px;
+    }
+    .text {
+        position: relative;
+        padding-right: 7px;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+        svg {
+            right: 0;
+            left: auto;
+        }
+    }
+    &.type-naver {
+        margin-top: 10px;
+        background-color: $cert-naver-color;
+    }
+}
+.name {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: $font-weight-bold;
+    line-height: 23px;
+}
+.desc {
+    margin-top: 4px;
+    font-weight: $font-weight-medium;
+    line-height: 17px;
+}

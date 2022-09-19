@@ -1,0 +1,9 @@
+@import '../scss/utils.scss';
+
+.article {
+    margin-top: 33px;
+    .point {
+        font-weight: $font-weight-medium;
+        color: $ui-green-color;
+    }
+}

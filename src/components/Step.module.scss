@@ -1,0 +1,42 @@
+@import '../scss/utils.scss';
+
+.article {
+    margin-top: 20px;
+    .item {
+        font-size: 16px;
+        font-weight: $font-weight-medium;
+        line-height: 22px;
+        color: #303038;
+        & + .item {
+            margin-top: 15px;
+        }
+        &.current-step {
+            color: $ui-green-color;
+            .number {
+                background-color: $ui-green-color;
+            }
+            & + .item {
+                color: #aaaaac;
+                .number {
+                    background-color: #c8cacc;
+                }
+            }
+        }
+    }
+    .text {
+        margin-left: 3px;
+    }
+    .number {
+        display: inline-block;
+        width: 18px;
+        margin: 2px 5px 0 0;
+        border-radius: 50%;
+        background-color: #303038;
+        font-size: 10px;
+        font-weight: $font-weight-bold;
+        line-height: 18px;
+        text-align: center;
+        vertical-align: top;
+        color: #fff;
+    }
+}

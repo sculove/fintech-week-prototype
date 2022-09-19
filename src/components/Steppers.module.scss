@@ -1,0 +1,99 @@
+@import '../scss/utils.scss';
+
+.article {
+    width: 100%;
+    max-width: 304px;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+.list {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.item {
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    + .item {
+        &:before {
+            content: '';
+            position: absolute;
+            top: 13px;
+            left: -50%;
+            width: 100%;
+            height: 1px;
+            background-color: $ui-green-color;
+        }
+    }
+    &.current {
+        .step {
+            border-color: $ui-green-color;
+            background-color: $ui-green-color;
+            color: #fff !important;
+        }
+        .text {
+            color: #222;
+        }
+        ~ .item {
+            .step {
+                border-color: #e0e0e0;
+                color: #999;
+            }
+            &:before {
+                background-color: #e0e0e0;
+            }
+        }
+    }
+    .type-mirae & {
+        &:before {
+            background-color: $sme-mirae-color;
+        }
+        &.current {
+            .step {
+                border-color: $sme-mirae-color;
+                background-color: $sme-mirae-color;
+            }
+        }
+        .step {
+            border-color: $sme-mirae-color;
+            color: $sme-mirae-color;
+        }
+    }
+    .type-woori & {
+        &:before {
+            background-color: $sme-woori-color;
+        }
+        &.current {
+            .step {
+                border-color: $sme-woori-color;
+                background-color: $sme-woori-color;
+            }
+        }
+        .step {
+            border-color: $sme-woori-color;
+            color: $sme-woori-color;
+        }
+    }
+}
+.step {
+    position: relative;
+    z-index: 1;
+    width: 26px;
+    height: 26px;
+    margin: 0 auto;
+    border: 1px solid $ui-green-color;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-weight: $font-weight-medium;
+    line-height: 25px;
+    color: $ui-green-color;
+}
+.text {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    line-height: 17px;
+    color: #666;
+}

@@ -1,0 +1,21 @@
+@import '../scss/utils.scss';
+
+.article {
+    @include flex-container;
+
+    border: 1px solid #c8cacc;
+    border-radius: 4px;
+    background-color: #fff;
+    + & {
+        margin-top: 6px;
+    }
+    &.no-border {
+        border: 0 none;
+    }
+}
+.button-delete {
+    @extend %button_reset;
+
+    position: relative;
+    padding: 14px 16px;
+}

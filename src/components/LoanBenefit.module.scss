@@ -1,0 +1,61 @@
+@import '../scss/utils.scss';
+
+.article {
+    @include flex-container;
+    &.type-mirae {
+        .value {
+            color: $sme-mirae-color;
+        }
+    }
+    &.type-woori {
+        .value {
+            color: $sme-woori-color;
+        }
+    }
+}
+.item {
+    @include flex(1);
+    + .item {
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 1px solid #e8e8e8;
+    }
+}
+.label {
+    margin-bottom: 3px;
+    font-size: 15px;
+    font-weight: $font-weight-semibold;
+    line-height: 19px;
+    color: #222;
+}
+.value {
+    font-size: 26px;
+    font-weight: $font-weight-bold;
+    line-height: 31px;
+    .unit {
+        display: inline-block;
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 19px;
+        vertical-align: top;
+        &:first-child {
+            margin-right: 3px;
+        }
+        &:last-child {
+            margin-left: 3px;
+        }
+    }
+    .percent {
+        display: inline-block;
+        margin: 6px 0 0 3px;
+        font-size: 18px;
+        line-height: 21px;
+        vertical-align: top;
+    }
+}
+.button-tooltip {
+    @extend %button_reset;
+
+    margin: 1px 0 0 3px;
+    cursor: pointer;
+}

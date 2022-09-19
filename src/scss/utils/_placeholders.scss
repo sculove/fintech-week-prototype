@@ -38,3 +38,9 @@
         display: none;
     }
 }
+
+%responsive-inner {
+    width: 100%;
+    max-width: $content-max-width;
+    margin: 0 auto;
+}

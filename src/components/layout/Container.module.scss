@@ -1,0 +1,13 @@
+@import '../../scss/utils.scss';
+
+.article {
+    @include flex-container;
+    @include flex-direction(column);
+
+    height: 100%;
+    box-sizing: border-box;
+    &:not(:first-child) {
+        margin-top: -56px;
+        padding-top: 56px;
+    }
+}

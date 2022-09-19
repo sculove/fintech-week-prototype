@@ -1,5 +1,3 @@
-import React from 'react';
-
 const IconSmartStore = ({width = '100%', height = '100%', viewBox = '0 0 196 142', style = {}}) => (
     <svg width={width} height={height} viewBox={viewBox} fill="none" style={style}>
         <g>

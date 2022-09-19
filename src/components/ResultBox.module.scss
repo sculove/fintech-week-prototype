@@ -1,0 +1,20 @@
+@import '../scss/utils.scss';
+
+.article {
+    margin-top: 12px;
+    padding: 20px 18px;
+    border: 1px solid #09b65a;
+    border-radius: 9px;
+    line-height: 20px;
+    color: #666;
+}
+.title {
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #222;
+    em {
+        color: $ui-green-color;
+    }
+}

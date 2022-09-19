@@ -1,0 +1,15 @@
+@import '../../scss/utils.scss';
+
+.article {
+    @include flex(1 0 auto);
+
+    padding-right: 20px;
+    padding-left: 20px;
+    & + & {
+        border-top: 10px solid #efeff0;
+    }
+    :global(.type-pc) & {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}

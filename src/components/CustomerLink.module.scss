@@ -1,0 +1,23 @@
+@import '../scss/utils.scss';
+
+.article {
+    @include flex-container;
+    .link-box {
+        @include flex(1);
+        & + .link-box {
+            margin-left: 6px;
+        }
+    }
+    .link {
+        display: block;
+        height: 34px;
+        border: 1px solid #c8cacc;
+        border-radius: 4px;
+        background-color: #fff;
+        font-size: 15px;
+        font-weight: $font-weight-medium;
+        line-height: 34px;
+        text-align: center;
+        color: #1e1e23;
+    }
+}

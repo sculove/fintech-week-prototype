@@ -1,0 +1,55 @@
+@import '../scss/utils.scss';
+
+.article {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    background-color: #fff;
+    text-align: center;
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+.inner {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+.title {
+    display: block;
+    margin-top: 30px;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #222;
+}
+.tip {
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: $font-weight-semibold;
+    line-height: 22px;
+    color: $ui-green-color;
+}
+.desc {
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: $font-weight-medium;
+    line-height: 22px;
+    word-break: keep-all;
+    color: #999;
+}
+.button-close {
+    @extend %button_reset;
+
+    position: absolute;
+    top: 16px;
+    right: 12px;
+    cursor: pointer;
+}

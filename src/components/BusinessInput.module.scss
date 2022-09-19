@@ -1,0 +1,16 @@
+@import '../scss/utils.scss';
+
+.input-box {
+    @include commonInputBoxStyle($flex: true);
+}
+.input {
+    @include commonInputStyle;
+    .input-value {
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
+    }
+}
+.dash {
+    @include commonInputDashStyle;
+}

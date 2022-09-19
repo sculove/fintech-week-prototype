@@ -1,0 +1,28 @@
+@import '../scss/utils.scss';
+
+.article {
+    margin-bottom: 30px;
+}
+.title {
+    display: block;
+    max-width: 200px;
+    font-size: 20px;
+    line-height: 28px;
+    word-break: keep-all;
+    color: #000;
+}
+.link {
+    display: inline-block;
+    margin-top: 3px;
+    line-height: 18px;
+    vertical-align: top;
+    color: #888;
+    svg {
+        margin: 3px 0 0 3px;
+    }
+}
+:global(.type-pc) {
+    .title {
+        max-width: none;
+    }
+}

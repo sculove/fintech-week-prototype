@@ -1,0 +1,54 @@
+@import '../scss/utils.scss';
+
+.article {
+    @extend %button_reset;
+    @extend %ui-green-color-button;
+
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 48px;
+    text-align: center;
+    &.size-large {
+        font-size: 18px;
+        line-height: 60px;
+    }
+    &.size-small {
+        font-size: 16px;
+        line-height: 46px;
+    }
+    &.radius {
+        border-radius: 4px;
+    }
+    &.is-disabled {
+        background-color: #dcdee0;
+        color: #a0a0a0;
+    }
+    &.type-mirae {
+        background-color: $sme-mirae-color;
+        text-shadow: none;
+    }
+    &.type-woori {
+        background-color: $sme-woori-color;
+        text-shadow: none;
+    }
+    &.type-light {
+        background-color: #e4f1ea;
+        text-shadow: none;
+        color: $ui-green-color;
+    }
+    &.type-mirae-light {
+        background-color: #feecde;
+        text-shadow: none;
+        color: $sme-mirae-color;
+    }
+    &.type-woori-light {
+        background-color: #e5f0f7;
+        text-shadow: none;
+        color: $sme-woori-color;
+    }
+    &.type-jb {
+        background-color: $sme-jb-color;
+        text-shadow: none;
+    }
+}

@@ -1,0 +1,15 @@
+@import '../scss/utils.scss';
+
+.title {
+    font-size: 18px;
+    line-height: 25px;
+    color: #1e1e23;
+}
+.description {
+    margin-top: 15px;
+    line-height: 20px;
+    color: #767678;
+    em {
+        color: $ui-green-color;
+    }
+}

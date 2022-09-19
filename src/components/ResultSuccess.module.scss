@@ -1,0 +1,51 @@
+@import '../scss/utils.scss';
+
+.box-gray {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 2px;
+    background-color: #f6f8fa;
+    .text {
+        line-height: 20px;
+        text-align: center;
+        color: #666;
+        em {
+            color: #222;
+        }
+    }
+}
+.area-info {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid #e8e8e8;
+    .box-gray + & {
+        margin-top: 10px;
+    }
+}
+.store {
+    margin-top: 14px;
+    font-size: 15px;
+    .store-title {
+        display: block;
+        margin-bottom: 7px;
+        font-weight: $font-weight-medium;
+    }
+    .item {
+        position: relative;
+        padding-left: 6px;
+        color: $ui-green-color;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            background-color: $ui-green-color;
+        }
+        + .item {
+            margin-top: 2px;
+        }
+    }
+}

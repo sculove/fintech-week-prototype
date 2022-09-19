@@ -1,0 +1,40 @@
+@import '../scss/utils.scss';
+
+.article {
+    flex-shrink: 0; // flex ie 대응
+    margin-top: auto;
+    padding: 0 20px 20px;
+    &.is-fixed {
+        min-height: 60px;
+        margin: 0;
+        padding: 0;
+        &.with-text {
+            min-height: 90px;
+        }
+        .inner {
+            @extend %responsive-inner;
+       
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            padding: 0;
+            background-color: #fff;
+            @supports (padding-bottom: constant(safe-area-inset-bottom)) {
+                padding-bottom: constant(safe-area-inset-bottom);
+            }
+            @supports (padding-bottom: env(safe-area-inset-bottom)) {
+                padding-bottom: env(safe-area-inset-bottom);
+            }
+        }
+    }
+}
+.alert-text {
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: $font-weight-medium;
+    line-height: 20px;
+    text-align: center;
+    color: $ui-green-color;
+}

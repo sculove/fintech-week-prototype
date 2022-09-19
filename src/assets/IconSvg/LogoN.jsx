@@ -1,5 +1,3 @@
-import React from 'react'
-
 const LogoN = ({
     fill = '#FFF',
     width = '100%',

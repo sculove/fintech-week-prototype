@@ -4,8 +4,11 @@ import CommonHeader from './layout/CommonHeader'
 import InfoLimitContent from './InfoLimitContent'
 import InfoLimitCustomer from './InfoLimitCustomer'
 import InfoLimitLoanMirae from './InfoLimitLoanMirae'
+import useTimeoutNavigation from '../hooks/useTimeoutNavigation'
 
 const Step4Page = () => {
+    useTimeoutNavigation("/stepcomplete", 5000)
+
     return (
         <>
             <CommonHeader title="한도와 금리조회"/>

@@ -5,7 +5,6 @@ import IconSmartStore from '../assets/IconSvg/IconSmartStore'
 import SubmitButton from './SubmitButton'
 
 const cx = classNames.bind(styles)
-const LOAN_CARE_PAGE = 'https://campaign.naver.com/loan_care'
 
 const Description = () => {
     return (

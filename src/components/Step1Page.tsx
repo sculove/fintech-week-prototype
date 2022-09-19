@@ -4,13 +4,13 @@ import Steppers from './Steppers'
 import InfoContent from './InfoContent'
 import MainTitle from './MainTitle'
 import BottomButton from './BottomButton'
-// import BusinessArea from './info/1/BusinessArea'
 import InfoExamineList from './InfoExamineList'
 import BusinessArea from './BusinessArea'
 import { InputTextFlexibleBoxProps } from './InputTextFlexibleBox'
-// import {InputTextFlexibleBoxProps} from './new/commons/input/InputTextFlexibleBox'
+import { useNavigate } from "react-router-dom"
 
 const Step1Page = () => {
+    const navigate = useNavigate();
     return (
         <>
             <CommonHeader title="한도와 금리조회" />
@@ -44,7 +44,7 @@ const Step1Page = () => {
                     buttonInfo={{
                         text: '다음',
                         onClick: () => {
-                            // TODO: 다음 페이지로 이동
+                            navigate("/step1success")
                         },
                     }}
                 />

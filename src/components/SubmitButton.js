@@ -1,16 +1,17 @@
 import classNames from 'classnames/bind'
 import styles from './SubmitButton.module.scss'
-
+import { useNavigate } from "react-router-dom";
 const cx = classNames.bind(styles)
 
-const SubmitButton = ({checkStatus}) => {
+const SubmitButton = () => {
+    const navigate = useNavigate();
     return (
         <div className={cx('article')}>
             <button
                 type="button"
                 className={cx('button')}
                 onClick={(e) => {
-                    // TODO 다음화면으로
+                    navigate("/step1")
                 }}>
                 약관 동의하고 한도 확인하기
             </button>

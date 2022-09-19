@@ -5,8 +5,11 @@ import SubmitContent from './SubmitContent'
 import SubmitList from './SubmitList'
 import CommonHeader from './layout/CommonHeader'
 import Container from './layout/Container'
+import useTimeoutNavigation from "../hooks/useTimeoutNavigation"
 
 const SelfAuth = () => {
+    useTimeoutNavigation("/step2success", 3000)
+
     return (
         <>
             <CommonHeader title="한도와 금리조회" />

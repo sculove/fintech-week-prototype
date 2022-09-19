@@ -2,8 +2,9 @@ import BottomButton from "./BottomButton"
 import Complete from "./Complete"
 import CommonHeader from "./layout/CommonHeader"
 import Container from './layout/Container'
-
+import { useNavigate } from "react-router-dom";
 export default function Step2Success() {
+    const navigate = useNavigate();
     return (
         <>
             <CommonHeader
@@ -17,7 +18,7 @@ export default function Step2Success() {
                         text: '완료하고 한도 확인하기',
                         disabled: false,
                         onClick: () => {
-                            // TODO:
+                            navigate("/step3")
                         }
                     }}
                 />

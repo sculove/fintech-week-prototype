@@ -1,6 +1,7 @@
 import LoadingCubeLayer from './LoadingCubeLayer'
 import InfoContent from './InfoContent'
 import Container from './layout/Container'
+import useTimeoutNavigation from "../hooks/useTimeoutNavigation"
 
 const Loading = () => {
     const tipText = '사업 Tip!'
@@ -12,11 +13,11 @@ const Loading = () => {
             <br />한 곳에서 확인할 수 있어요.
         </>
     )
+    useTimeoutNavigation("/step4", 5000)
     
     return (
         <>
             <Container>
-                <div style={{height: "50px"}}/>
                 <InfoContent>
                     <LoadingCubeLayer
                         tipText={tipText}

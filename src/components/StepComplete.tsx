@@ -1,13 +1,23 @@
+import BottomButton from './BottomButton'
 import Container from './layout/Container'
-// import CommonHeader from './layout/CommonHeader'
+import { useNavigate } from "react-router-dom";
 
 const StepComplete = () => {
+    const navigate = useNavigate()
     return (
         <>
-            {/* <CommonHeader title="한도와 금리조회"/> */}
             <Container>
                 <h1>이미지가 필요합니다</h1>
-                <button>처음으로...</button>
+                <BottomButton
+                    fixed
+                    buttonInfo={{
+                        text: '처음으로 돌아가기',
+                        disabled: false,
+                        onClick: () => {
+                            navigate("/")
+                        }
+                    }}
+                />
             </Container>
         </>
     )

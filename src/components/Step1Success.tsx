@@ -5,8 +5,10 @@ import InfoContent from './InfoContent'
 import BottomButton from './BottomButton'
 import ResultSucceess from './ResultSuccess'
 import ResultTitle from './ResultTitle'
+import { useNavigate } from "react-router-dom";
 
 const Step1SuccessPage = () => {
+    const navigate = useNavigate();
     return (
         <>
             <CommonHeader title="한도와 금리조회" />
@@ -25,7 +27,7 @@ const Step1SuccessPage = () => {
                     buttonInfo={{
                         text: '다음',
                         onClick: () => {
-                            // TODO: 다음으로 
+                            navigate("/step2")
                         },
                     }}
                 />

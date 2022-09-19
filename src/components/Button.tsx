@@ -32,6 +32,7 @@ const Button = ({text, size, radius, color, onClick}: ButtonProps) => {
                 color: "white",
             }}
             type="button"
+            onClick={onClick}
             disabled={false}>
             {text}
         </button>

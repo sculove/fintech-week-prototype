@@ -41,7 +41,7 @@
     }
   ],
   "id": "finance-fe/fintech-week-prototype",
-  "start_url": "finance-fe/fintech-week-prototype/index.html",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

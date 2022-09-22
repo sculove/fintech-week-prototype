@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "스마트스토어 대출",
+  "name": "스마트스토어 대출",
   "icons": [
     {
       "src": "favicon.ico",

@@ -7,7 +7,7 @@ const StepComplete = () => {
     return (
         <>
             <Container>
-                <h1>이미지가 필요합니다</h1>
+                <img src="result.jpg"/>
                 <BottomButton
                     fixed
                     buttonInfo={{

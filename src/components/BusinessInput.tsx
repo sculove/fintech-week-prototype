@@ -71,7 +71,7 @@ const BusinessInput = ({
                         placeholder={'00000'}
                         {...lastInputProps}
                         readOnly={true}
-                        value={6789}
+                        value={67890}
                     />
                 </div>
             </div>

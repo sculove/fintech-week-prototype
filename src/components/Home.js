@@ -22,6 +22,11 @@ const Home = () => {
             <MainHeader />
             <TabMenu />
             <Description/>
+            <p className={cx('description')} style={{
+                margin: "10px 20px",
+                color: "gray",
+                fontStretch: "bold"
+            }}>본 체험은 서비스의 이해를 돕기 위해 제작된 것으로, 실제 스마트스토어 사업자대출의 절차를 축소하여 재구성하였습니다.</p>
             {/* {fromHome && (
                 // [D] 한도 확인하기 버튼 하단 고정 시 is-fixed 클래스 추가 부탁드립니다.
                 <div className={cx('area-info', {'is-fixed': areaInfoFixed})}>

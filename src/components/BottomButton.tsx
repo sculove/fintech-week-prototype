@@ -1,6 +1,5 @@
 /* eslint-disable react/display-name */
 import classNames from 'classnames/bind'
-import {forwardRef} from 'react'
 import styles from './BottomButton.module.scss'
 
 import Button, {ButtonProps} from './Button'
@@ -13,7 +12,7 @@ type BottomButtonProps = {
     buttonInfo: Omit<ButtonProps, 'size'>
 }
 
-const BottomButton = forwardRef<HTMLDivElement, BottomButtonProps>(({showAlertText, buttonInfo}) => {
+const BottomButton = ({showAlertText, buttonInfo}: BottomButtonProps) => {
     return (
         <div className={cx('article', {'is-fixed': true, 'with-text': false})}>
             <div className={cx('inner')}>
@@ -22,5 +21,5 @@ const BottomButton = forwardRef<HTMLDivElement, BottomButtonProps>(({showAlertTe
             </div>
         </div>
     )
-})
+}
 export default BottomButton

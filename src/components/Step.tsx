@@ -8,7 +8,7 @@ type StepProps = {
 }
 
 const Step = ({currentStep}: StepProps) => {
-    const stepList = ['국세청', '국민건강보험공단']
+    const stepList = ['국세청']
 
     return (
         <ol className={cx('article')}>

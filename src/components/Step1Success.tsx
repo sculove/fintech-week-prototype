@@ -19,7 +19,7 @@ const Step1SuccessPage = () => {
                     <ResultSucceess
                         memberName={'김페이'}
                         isWooriWhitelist
-                        smartstoreList={['디와이스터어']}
+                        smartstoreList={['김페이스토어']}
                     />
                 </InfoContent>
                 <BottomButton

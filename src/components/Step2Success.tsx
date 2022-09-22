@@ -11,7 +11,7 @@ export default function Step2Success() {
                 title="네이버 인증서"
             />
             <Container>
-                <Complete step={2} />
+                <Complete step={1} />
                 <BottomButton
                     fixed
                     buttonInfo={{

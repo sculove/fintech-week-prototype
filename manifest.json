@@ -18,7 +18,8 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "id": "/pages/finance-fe/fintech-week-prototype/",
+  "start_url": "/pages/finance-fe/fintech-week-prototype/index.html",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "https://oss.fin.navercorp.com/pages/finance-fe/fintech-week-prototype/static/css/main.388bb54e.css",
-    "main.js": "https://oss.fin.navercorp.com/pages/finance-fe/fintech-week-prototype/static/js/main.e0eef654.js",
-    "service-worker.js": "https://oss.fin.navercorp.com/pages/finance-fe/fintech-week-prototype/service-worker.js",
-    "index.html": "https://oss.fin.navercorp.com/pages/finance-fe/fintech-week-prototype/index.html",
-    "main.388bb54e.css.map": "https://oss.fin.navercorp.com/pages/finance-fe/fintech-week-prototype/static/css/main.388bb54e.css.map",
-    "main.e0eef654.js.map": "https://oss.fin.navercorp.com/pages/finance-fe/fintech-week-prototype/static/js/main.e0eef654.js.map"
+    "main.css": "/pages/finance-fe/fintech-week-prototype/static/css/main.388bb54e.css",
+    "main.js": "/pages/finance-fe/fintech-week-prototype/static/js/main.0c38b2e6.js",
+    "service-worker.js": "/pages/finance-fe/fintech-week-prototype/service-worker.js",
+    "index.html": "/pages/finance-fe/fintech-week-prototype/index.html",
+    "main.388bb54e.css.map": "/pages/finance-fe/fintech-week-prototype/static/css/main.388bb54e.css.map",
+    "main.0c38b2e6.js.map": "/pages/finance-fe/fintech-week-prototype/static/js/main.0c38b2e6.js.map"
   },
   "entrypoints": [
     "static/css/main.388bb54e.css",
-    "static/js/main.e0eef654.js"
+    "static/js/main.0c38b2e6.js"
   ]
 }

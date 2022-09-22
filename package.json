@@ -2,7 +2,6 @@
   "name": "fintech-week-prototype",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://oss.fin.navercorp.com/pages/finance-fe/fintech-week-prototype",
   "dependencies": {
     "@financial/common-icons": "^2.20.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -37,9 +36,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "deploy": "rm -rf build && npm run build && node ./deploy.js",
-    "eject": "react-scripts eject"
+    "build:gh-pages": "npm run clean && PUBLIC_URL=https://oss.fin.navercorp.com/pages/finance-fe/fintech-week-prototype react-scripts build",
+    "serve": "serve -s build",
+    "clean": "rm -rf build",
+    "deploy": "npm run clean && npm run build:gh-pages && node ./deploy.js"
   },
   "eslintConfig": {
     "extends": [

@@ -42,7 +42,7 @@
   ],
   "id": "/fintech-week-prototype/",
   "start_url": "/fintech-week-prototype/index.html",
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }

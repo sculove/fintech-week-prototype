@@ -36,7 +36,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:gh-pages": "npm run clean && PUBLIC_URL=/pages/finance-fe/fintech-week-prototype react-scripts build",
+    "build:gh-pages": "npm run clean && PUBLIC_URL=/fintech-week-prototype react-scripts build",
     "serve": "serve -s build",
     "clean": "rm -rf build",
     "deploy": "npm run clean && npm run build:gh-pages && node ./deploy.js"

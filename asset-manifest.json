@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/fintech-week-prototype/static/css/main.c563b08e.css",
-    "main.js": "/fintech-week-prototype/static/js/main.5ddfa0a3.js",
+    "main.css": "/fintech-week-prototype/static/css/main.4d6779d6.css",
+    "main.js": "/fintech-week-prototype/static/js/main.4d2efaed.js",
     "service-worker.js": "/fintech-week-prototype/service-worker.js",
     "index.html": "/fintech-week-prototype/index.html",
-    "main.c563b08e.css.map": "/fintech-week-prototype/static/css/main.c563b08e.css.map",
-    "main.5ddfa0a3.js.map": "/fintech-week-prototype/static/js/main.5ddfa0a3.js.map"
+    "main.4d6779d6.css.map": "/fintech-week-prototype/static/css/main.4d6779d6.css.map",
+    "main.4d2efaed.js.map": "/fintech-week-prototype/static/js/main.4d2efaed.js.map"
   },
   "entrypoints": [
-    "static/css/main.c563b08e.css",
-    "static/js/main.5ddfa0a3.js"
+    "static/css/main.4d6779d6.css",
+    "static/js/main.4d2efaed.js"
   ]
 }
